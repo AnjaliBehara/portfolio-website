@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Anjali.com</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="cat.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="#"class="logo">Portfolio</a>
+        <ul>
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Project.html">project</a></li>
+            <li><a href="contact.html">contact</a></li>
+        </ul>
+    </nav>
+    <div class="bars-animation">
+        <div class="bar"style="--i:6;"></div>
+        <div class="bar"style="--i:5;"></div>
+        <div class="bar"style="--i:4;"></div>
+        <div class="bar"style="--i:3;"></div>
+        <div class="bar"style="--i:2;"></div>
+        <div class="bar"style="--i:1;"></div>
+    </div>
+    <section class="home">
+        <div class="home-info">
+            <h1>Anjali Behara</h1>
+            <h2>I'm a
+               <span style="--i:3;"data-text="Frontend Developer">Frontend DEveloper</span>
+               <span style="--i:2;"data-text="Blogger">Blogger</span>
+               <span style="--i:1;"data-text="Designer">Designer</span>
+            </h2>
+            <p>hey, this is anjali.</p>
+            <div class="btn-sci">
+            <a href="#"class="btn">Download CV</a>
+            <div class="sci">
+                <a href="#"><i class='bx bxl-Linkedin-square icon'></i></a>
+                <a href="#"><i class='bx bxl-github icon'></i></a>
+                <a href="#"><i class='bx bxl-g-mail icon'></i></a>
+            </div>
+            </div>
+        </div>
+        <div class="home-img">
+            <div class="img-box">
+                <div class="img-item">
+                    <img src="anju.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+              </ul>
+            </div>
+        </div>
+    </div>
+ </section>
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title" align="center">My Projects</h2>
+                    <div class="project-card">
+                        <h3 align="center">Portfolio Website</h3>
+                        <p align="center">A custom portfolio website built with HTML, CSS, and JavaScript.</p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title" align="center">Contact Me</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Get in Touch</h3>
+                        <p>Feel free to reach out for collaborations or just a friendly hello!</p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <span>Anjali.com</span>
+                            </div>
+                            <div class="contact-item">
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        
+            <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'poppins',sans-serif;
+}
+a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+.navbar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 25px 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    visibility:hidden;
+    opacity: 0;
+    animation: show-content 1.5s linear forwards;
+    animation-delay: 1.2s;
+}
+@keyframes show-content{
+    100%{
+        visibility: visible;
+        opacity: 1;
+    }
+}
+.navbar .logo{
+    font-size: 30px;
+    font-weight: 700;
+}
+.navbar ul{
+    display: flex;
+
+}
+.navbar ul li{
+    list-style: none;
+    margin-left: 35px;
+}
+.navbar ul li a{
+    font-size: 20px;
+    font-weight: 500;
+}
+.navbar ul li:hover a,
+.navbar ul li.active a{
+    color: brown;
+}
+.home{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    height: 100vh;
+    padding: 60px 9% 0;
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    animation: show-content 1.5s linear forwards;
+    animation-delay: 1.6s;
+}
+.home-info h1{
+    font-size: 55px;
+}
+.home-info h2{
+    display: inline-block;
+    font-size: 32px;
+    margin-top: 10px;
+}
+.home-info h2 span{
+    position: relative;
+    display: inline-block;
+    color: transparent;
+    -webkit-text-stroke: -7px #7cf03d;
+    animation:display-text 16s linear infinite;
+    animation-delay: calc(-4s *var(--i));
+}
+@keyframes display-text{
+    25%, 100%{
+        display: none;
+
+    }
+}
+.home-info h2 span::before{
+    content: attr(data-text);
+    position: absolute;
+    width: 0;
+    border-right: 2px solid green;
+    color: #7cf03d;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: fill-text 4s linear infinite;
+}
+@keyframes fill-text{
+    10%,-100%{
+        width: 0;
+    }
+    70%,
+    90%{
+        width: 100%;
+    }
+}
+
+.home-info p{
+
+    font-size: 16px;
+    margin: 10px 0 25px;
+}
+.home-info .btn-sci{
+    display: flex;
+    padding: 10px 30px;
+    background: chartreuse;
+    border: 2px solid chartreuse;
+    border-radius: 40px;
+    font-size: 16px;
+    color: brown;
+    font-weight: 600;
+}
+.btn:hover{
+    background: transparent;
+    color: chartreuse;
+    box-shadow: none;
+}
+.home-info .btn-sci .sci{
+    margin-left: 20px;
+}
+.home-info .btn-sci .sci{
+    display: inline-flex;
+    padding: 8px;
+    border-radius: 50px;
+    border: 2px solid chartreuse;
+    font-size: 20px;
+    color: chartreuse;
+    margin: 0 8px;
+}
+.home-img .img-box{
+    position: relative;
+    width: 32vw;
+    height: 32vw;
+    border-radius: 60%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.home-img .img-box::before
+.home-img .img-box::after{
+    content:'';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: conic-gradient(transparent,transparent,transparent,#7cf03d);
+    transform: rotate(0deg);
+    animation: rotate-border 10s linear infinite;
+}
+.home-img .img-box::after{
+    animation-delay: -5s;
+}
+
+@keyframes rotate-border{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.home-img .img-box .img-item{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: black;
+    border-radius: 50%;
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    overflow: hidden;
+
+}
+.home-img .img-box .img-item img{
+    position: absolute;
+    top: 30px;
+    display: block;
+    width: 85%;
+    object-fit: cover;
+    mix-blend-mode: lighten;
+}
+.bars-animation{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    z-index: -1;
+}
+.bars-animation ,bar{
+    width: 100%;
+    height: 100%;
+    background: #1f242d;
+    border: 2px solid red;
+    transform: translateY(-100%);
+    animation: show-bars .5s ease-in-out forwards;
+    animation-delay: calc(.1s*var(--i));
+}
+@keyframes show-bars{
+    100%{
+        transform: translateY(0%);
+    }
+}
+.about{
+    font-family: arial;
+    display: flex;
+    margin-top: 1px;
+}
+.about .h2{
+    align-items: center;
+}
+.about-container{
+    display: block;
+}
+.about-content{
+    display: flex;
+    align-content: center;
+    text-box: inherit;
+    border: 1px solid;
+
+}
+.about-text{
+    align-items: center;
+    padding: 5px;
+}
+.h3{
+    text-align: center;
+}
+.ul{
+    display: contents;
+}
+</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolioabout</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <div class="about-container">
+        <h2 class="section-title" align="center">About</h2>
+        <div class="about-content"><p>
+            Hey! This is Anjali.
+            I'm an Engineering student of branch 'CSE'.<br><br>
+
+            I'm a fast learner and curiosity to learnig new things.<br><br>
+            My hobbies learning new things,seeing technical movies like IAS,CBI and playing games,dance.<br> <br>
+
+            I like to create vedioes and images and also intrest to create a functional websites.<br><br>
+
+            I'm also intrest in other activities like games and Dance. 
+        </p>
+            <div class="about-text">
+              <h3 align="center">My Skills</h3>
+              <ul>
+                <li>Frontend Developer</li>
+       <li>My portfolio</li>
+       <li>web-calculator</li>
+                <li>Project on Agriculture</li>
+              </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<style>
+    body{
+        font-family: arial;
+        margin: 20px;
+        padding: 0;
+
+        background: #f0f0f0;
+    }
+    .about-container{
+        font-size: 30px;
+        font-weight: bold;
+        padding: 20px;
+        background-color: #f9f9f9;
+        margin: 40px auto;
+    }
+    
+    .about-content{
+        font-size: 28px;
+        margin-bottom: 20px;
+        color:cadetblue
+
+    }
+    .section-title{
+        font-size: 30px;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 10px;
+    }
+    .about-text{
+        margin-top: 20px;
+        font-size: large;
+    }
+    .about-text h3{
+        font-size: 30px;
+        font-weight: bold;
+        color: black;
+        margin-bottom: 12px;
+    }
+    .about-text ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+
+    .about-text li{
+        text-align: center;
+        margin-bottom: 10px;
+        padding-left: 30px;
+        position: relative;
+        font-size: 26px;
+    }
+    .about-text li::before{
+        content: "\2022";
+        position: absolute;
+        font-size: 18px;
+        left: 0;
+        top: 0;
+    }
+
+</style>
+
+ 
