@@ -24,5 +24,3 @@ It showcases my skills, projects, and achievements in a clean and responsive des
 ## Preview
 [portfolio output] (portfolio.png)
 
-## 📂 Project Structure  
-
