@@ -21,6 +21,7 @@ It showcases my skills, projects, and achievements in a clean and responsive des
 
 ---
 
-## Preview
+## output screenshot
 [portfolio output] (portfolio.png)
+created by [Anjali Behara](https://github.cpom/anjalibehara)
 
